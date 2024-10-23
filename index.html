@@ -321,25 +321,25 @@
   function pgmuncul(){pergeseran.style="position:relative;opacity:1;transform:scale(1);";setTimeout(munculkembali,500)}
   function bqmuncul(){
     if(poinjwb==1){
-      katakata = kalimat.innerHTML;kalimat.innerHTML = "Mwhehehe kadonya nnti di bungkus";
+      katakata = kalimat.innerHTML;kalimat.innerHTML = "mwhehehe kadonya nanti di bungkus ya";
     }else{
-      klganti.innerHTML="Yakin gamau kado??<br><br>";katakata = kalimat.innerHTML;kalimat.innerHTML = "";
+      klganti.innerHTML="yakin gamau kado??<br><br>";katakata = kalimat.innerHTML;kalimat.innerHTML = "";
     }
     Content.style = "opacity:1;margin-top:8vh";fotostiker.style="display:none";pergeseran.style="display:none";Tombol.style="";bq.style = "position:relative;opacity:1;visibility:visible;margin-top:5vh;transform: scale(1);";
     setTimeout(kalimatakhir,200);ftganti=0;fthilang();
   }
   function bqhilang(){wallpaper.style="transform: scale(2);";bodyblur.style="opacity:.3";bq.style = "position:relative;transition:all .7s ease;";}
 
-  tompositif = "Mau";
-  tomnegatif = "Gamau";
+  tompositif = "mau";
+  tomnegatif = "gamau";
   async function aksibalas(){
     var { isConfirmed: prtanya } = await swals.fire({
       title: nama + ' mau kado gak nih? 🤭❤️',
       imageUrl: '' + fotostikerPopup.src, showCancelButton: true, confirmButtonText: '' + tompositif, cancelButtonText: '' + tomnegatif,});
     if(prtanya){
        await swals.fire({
-         title: 'Zonkkkkk:)', 
-         html: 'tunggu aku gajian tanggal 28 ya 😹', 
+         title: 'zonkkkkk:)', 
+         html: 'tunggu aku gajian tanggal 28 ya🤭', 
          imageUrl: '' + fotostikerPopupCon.src,
        });
        poinjwb=1;
